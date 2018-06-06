@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<title>    
-2016 Fall 計算機程式課程
+<title>
+2017 Spring 機械設計工程系網際內容管理
 </title>
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -13,23 +13,23 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css">
-    <link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="data/reveal/reveal.css">
+    <link rel="stylesheet" href="data/reveal/black.css" id="theme">
     
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="data/reveal/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'data/reveal/pdf.css' : 'data/reveal/paper.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
     <!--[if lt IE 9]>
-    <script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"></script>
+    <script src="data/reveal/html5shiv.js"></script>
     <![endif]-->
 </head>
 
@@ -39,31 +39,17 @@
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-# 2016Fall 計算機程式課程
+## 2017Fall CADP 與 CP
 
-### 虎科大機械設計工程系
+### 余昱輝的期末投影片報告
 
 <small>
-Created by [s40523210](http://s40523210.github.io/kmolab/blog/)
+Created by [40523211]
 </small>
 
-[s40523210](blog/index.html)
+[40523211倉儲](https://cadpb.kmol.info/40523211/index)<br>
+[40523211網誌](https://cadpb.kmol.info/40523211/doc/trunk/blog/)
 
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
 
     </script>
 </section>
@@ -71,15 +57,261 @@ Created by [s40523210](http://s40523210.github.io/kmolab/blog/)
 
 						
 <section>
+    <section data-markdown>
+        <script type="text/template">
+    # 學期內容
+
+    <p align=left>
+    <font color="#AAAAAA">教學內容</font>
+    <hr color="white">
+    <p align=left>
+
+    這學期主要是要讓我們從倉儲規劃管理開始，之後進入設計鋼球運動軌道為目標的協同課程，
+    在設計出軌道前需先熟悉<font color="#FF0000">solvespace</font>以及<font color="#FF0000">VREP</font>和<font color="#FF0000">Onshape</font>等軟體的應用,其中<font color="#FF0000">VREP</font>是最為重要
+    來讓我們有能力製作出一個能動的機構。
+        </script>
+    </section>
+</section>
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W1-W3
+    <p align=left>
+    <font color="#AAAAAA">教學內容</font>
+    <hr color="white">
+    <p align=left>
+    1.讓我們在<font color="#FF0000">Fossil</font>建立一個屬於個人的倉儲。<br>
+
+    2.改變自己倉儲內的時區，使上傳時間能夠變正確的。<br>
+
+    3.從倉儲內建立一個能連接到自己網誌的超連結。<br>
+
+    4.教我們如何利用<font color="#FF0000">Fossil</font> 來上傳或下載資料。<br>
+
+    5.利用leo製作每周的網誌。
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    <p align=left>
+    <font color="#AAAAAA">操作順序</font>
+    <hr color="white">
+    <p align=left>
+    1.在<font color="#FF0000">python2017fall_36</font>資料夾中打開程式，之後利用<font color="#FF0000">SciTE</font>打開leo並從資料夾user內開啟自己的<font color="#FF0000">leo</font>。<br>
+
+    2.將一周的學習新得和學習內容濃縮成一頁網誌。<br>
+
+    3.最後利用語法將的內容上傳至<font color="#FF0000">Fossil</font>。<br>
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    <font color="#AAAAAA">語法用途</font>
+    <hr color="white">
+    <p align=left>
+    <font color="#FFB630">cd</font>XX:移動至XX資料夾。<br>
+    <font color="#FFB630">mkdir</font> XX:創立XX資料夾<br>
+    <font color="#FFB630"> fossil add .</font> : 新增內容。 (.)所代表的意思是所有的內容。<br>
+    <font color="#FFB630"> fossil clone</font>:下載網站內的內容。<br>
+    <font color="#FFB630">fossil open</font>:開啟fossil檔案裡的資料。<br>
+    <font color="#FFB630">fossil commit -m "w19"</font>:提交檔案的標題名稱為(w19)。<br>
+    <font color="#FFB630">fossil upate</font>:更新資料。<br>
+    <font color="#FFB630"> fossil delete</font>:刪除。<br>
+    <font color="#FFB630"> fossil status</font>:查詢儲藏庫存放資料的內容。<br>
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    <p align=left><font color="#00FFFF">範例圖</font></p>
+    <hr color="white">
+    <img src="https://ppt.cc/fcHKIx@.jpg" border="0" alt="11" title="11"></a>
+        </script>
+    </section>
+
+
+    						
+</section>
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W4教學內容
+    <p align=left>
+    <font color="#AAAAAA">教學內容</font>
+    <hr color="white">
+    <p align=left>
+    本周的課程教我們運用<font color="#FFFF00">solvespace</font>來繪圖，在<font color="#33FF33"><a href="https://mde1a1.kmol.info/2017fall/raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44"target="_blank">網址位置</a></font> 提供了零件圖 來讓我們練習，使我們能夠先熟悉 <font color="#FFFF00">solvespace</font>這個繪圖軟體。<br>
+
+    再導入<font color="#45FF45">V-REP</font>的軟體來做出3D視角及動態模擬讓我們明白自己的零件作動樣子。<br>
+    </p>
+
+    <hr color="white">
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    <font color="#FFFF00">零件圖<font>
+    <hr color="white">
+    <!-- PELICAN_END_SUMMARY --><img src="https://ppt.cc/fwCzfx@.jpg" border="0" alt="1121" title="1121"width="400" height="550"></a>
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # W5
+    <p align=left>
+    <font color="#AAAAAA">教學內容</font>
+    <hr color="blue">
+    <p align=left>
+    利用<font color="#FF3333">solvespace</font>的程式來繪製上個星期的那八個零件圖，繪製完後將那八個零件按照<font color="#FF3333">Nutcracker</font>所提供的組裝圖來一一組裝。<br>
+    組裝完後將檔案存成<font color="#FF3333">stl檔</font>，並且利用<font color="#FF3333">stl</font>檔來讓繪製的圖片能在自己的<font color="#FF3333">Blog</font>上呈現3D可動視角。<br>
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    #程式碼
+
+
+    <hr color="red">
+    <p align=left>
+    <pre><code>iframe src="./../data/stlviewer/viewstl.html?src=./../project/nutcracker/nutcracker.stl" width="800" height="600"></iframe></pre><br>
+    <font color="#FF3333">stl</font>= 檔案資料夾名稱。<br>
+    <font color="#FF3333">combination.stl</font>=檔案名稱。<br>
+    </p>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    #組合圖
+    <hr color="red">
+    <iframe src="pa/viewstl.html?src=./../pa/nutcracker.stl" width="800" height="600"></iframe>
+        </script>
+    </section>
+
+
+    						
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W6
+    <p align=left>
+    <font color="#AAAAAA">教學內容</font>
+    <hr color="red">
+    <p align=left>
+    本周一樣是利用<font color="#FF0000">solvespace</font>來練習繪製，這次給了<a href="https://hp.kmol.info:8443/get_page/Angle%20Bracket"target="_blank">Angle Bracket</a></font>來練習。<br>
+
+    利用學校的電子件申辦網頁上的繪畫程式<font color="#FF0000">Onshape</font>會員,練習使用<font color="#FF0000">Onshape</font>與同學間協同繪畫。<br>
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    <p align=left><font color="#00FFFF">onshape</font></p>
+    <hr color="white">
+    <img src="https://ppt.cc/fF1a8x@.jpg" border="0" alt="1111" title="1111"></a>
+        </script>
+    </section>
+
+
+    						
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W7期中考試周
+
+    <hr color="white">
+    影片
+    <iframe src="https://player.vimeo.com/video/240112938" width="640" height="500" frameborder="0"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     <p>
+        </script>
+    </section>
+
+
+    						
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W9~W18
+
+    <p align=left>
+        </script>
+    </section>
+</section>
+
+						
 <section data-markdown>
     <script type="text/template">
-# 計算機程式在教什麼?
+<section>
+    提球上升機構(1)onshape動畫
+    <hr color="white">
 
-## 創造力
-## 表達力
-以及
-## 協同力
+    做初設計的提球機構<br>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ad7cyppIkgo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+</section>
+<section>
+    提球上升機構(2)onshape動畫
+    <hr color="white">
+
+    第二次設計的提球機構<br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhecRT8YpGU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+</section>
+<section>
+    提球上升機構
+    <hr color="white">
+
+    設計的提球機構<br>
+
+    <img src="https://ppt.cc/fTe7Ux@.png" border="0" alt="1121" title="1121"width="400" height="550"></a>
+    </p>
+
+</section>
     </script>
 </section>
 
@@ -87,13 +319,24 @@ Created by [s40523210](http://s40523210.github.io/kmolab/blog/)
 						
 <section data-markdown>
     <script type="text/template">
-# 計算機程式在教什麼?
+<section>
+    onshape功能影片操作與翻譯
+    onshape影片(1)<br>
+    <hr color="white">
 
-## <span style="color:#FFFF00">創造力</span><small>=自學力+程式力+想像力</small>
-## <span style="color:#FFFF00">表達力</span><small>=口語+文字+2D+3D+理論+實體</small>
-<span style="color:#00FF80">以及</span>
-## <span style="color:#FFFF00">協同力</span><small>=電腦+網路+工具+專案</small>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YRSWIeV8vjE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+</section>
+<section>
+    onshape功能影片操作與翻譯
+    onshape影片(2)<br>
+    <hr color="white">
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jqhZ9XEyTxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
     </script>
 </section>
 
@@ -101,14 +344,33 @@ Created by [s40523210](http://s40523210.github.io/kmolab/blog/)
 						
 <section data-markdown>
     <script type="text/template">
-# 計算機程式系列課程
+<section>
+    <font color="#AAAAAA">期末簡報</font>
+    <hr color="white">
+    <p align=left>
+    <font color="#FFB630"> 彈珠台</font>:利用<font color="#FF0000">Onshape</font>來繪製彈珠台和彈珠，利用<font color="#FF0000">V-REP</font>模擬並使彈珠能在上面運作。<br>
 
-## 網際內容管理
-## 電腦輔助設計實習
-<span style="color:#00FF80">還有</span>
-## 協同產品設計實習
-也在研習<span style="color:#FFFF00">創造力</span>、<span style="color:#FFFF00">表達力</span>與<span style="color:#FFFF00">協同力</span>
+    <font color="#FFB630"> 模組化鋼珠軌道</font>:利用<font color="#FF0000">Onshape</font>繪製軌道並且能接上組內的軌道主體，然後再利用V-REP模擬，使彈珠能在上面運動。<br>
 
+    <font color="#FFB630"> 個人心得</font>:心得與感想。<br>
+</section>
+<section>
+    <font color="#AAAAAA">彈珠台</font>
+    <hr color="white">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o9msH7Sgi-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+<section>
+    <font color="#AAAAAA">模組化軌道</font>
+    <hr color="white">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qodv87AO8NI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+<section>
+    <font color="#AAAAAA">期末影片報告</font>
+    <hr color="white">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IG5siqY8mJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
     </script>
 </section>
 
@@ -116,438 +378,75 @@ Created by [s40523210](http://s40523210.github.io/kmolab/blog/)
 						
 <section data-markdown>
     <script type="text/template">
-# 何謂創造力?
+<section>
+    實作影片1
+    <hr color="white">
 
-## 能夠<small><span style="color:#FF0080">持續</span></small><span style="color:#FFFF00">自學</span>
-## 會安排<small><span style="color:#FF0080">高效</span></small><span style="color:#FFFF00">可執行</span>流程
-<span style="color:#00FF80">還有</span>
-## 俱備<small><span style="color:#FF0080">豐富</span></small><span style="color:#FFFF00">想像力</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K_Njyb5qZwk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+<section>
+    實作影片2
+    <hr color="white">
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sqehFi1l1kI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
     </script>
 </section>
-
-
-						
 <section data-markdown>
     <script type="text/template">
-# 何謂創造力?
-
-## 能夠<small><span style="color:#FF0080">持續</span></small>自學-><span style="color:#FFFF00">不一定都要別人教</span>
-## 會安排<small><span style="color:#FF0080">高效</span></small>可執行流程->展現<span style="color:#FFFF00">執行力</span>
-<span style="color:#00FF80">還有</span>
-## 俱備<small><span style="color:#FF0080">豐富</span></small>想像力->不受限, <span style="color:#FFFF00">積極進行改造</span>
-
+#心得
+<hr color="white">
+<p align=left>
+上完本學期的這堂課對<font color="#FF3333">設計是一種明確與具體的表達,也是為了與他人協同的橋樑,它是一種語言</font>,讓我又充分的了解這些話的意義。<br>
+在這個學期的電腦輔助設計實習，學到了如何使用<font color="#FF3333">fossil</font>管理倉儲與製作投影片網誌、<font color="#FF3333">github</font>協同、用<font color="#FF3333">onshape</font>,<font color="#FF3333">solvespace</font>繪圖跟<font color="#FF3333">V-rep</font>的模擬。<br>
+Github協同倉儲可以更方便組員之間分配工作看誰做了什麼一目了然，並且學習克服設計期間的困難，討論並解決他，讓我更加知道團隊的重要性。<br>
+我學到了許多東西，謝謝組員也謝謝老師。<br>
     </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 自學的訓練
-
-## 學員必須自己有學習動機
-## 能消化中英文資料
-## 從中體會學習的意義
-
-
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 高效執行力
-
-## 用對的方法
-## 在對的時機
-## 找對的人
-## 作對的事
-
-
-    </script>
-</section>
-
-
-						
 </section>
 <section>
 <section data-markdown>
     <script type="text/template">
-# 計算機程式課程規劃
-
-## [課程規劃](https://github.com/mdecourse/2016fallcp/blob/master/syllabus.py)
-## [課程 Wiki](https://github.com/mdecourse/2016fallcp/wiki)
-## [課程網誌](http://chiamingyen.github.io/kmolab/blog/tag/2016fallcp.html)
-
+#第一組協同倉儲
+<hr color="white">
+	
+<a href="https://github.com/s40523210/bg1_cadp_finalproject"target="_white">第一組協同倉儲</a></font>
     </script>
 </section>
 
-
-						
-<section data-markdown>
-    <script type="text/template">
-## 下載 miniconda 可攜環境
-
-  * 在電腦教室下載 [mini2016fall.7z](http://140.130.17.17/public/2016fall/mini2016fall_with_leo.7z)
-  * 從外部下載 [mini2016fall.7z](https://140.130.17.101/download/?filepath=/home/yen/cmsimply/wsgi/local_data/downloads/mini2016fall_with_leo.7z)
-  * start.bat 啟動, stop.bat 關閉
-  * 建議存在隨身硬碟中使用
-
-
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-## 學員自評項目
-
-* 上課筆記與心得寫在個人的 2016fallcp_hw 倉儲 Wiki 中
-* 利用 [ShareX](https://getsharex.com/) 錄製上課操作練習影片
-* 將影片加上說明字幕後, 上傳至個人 [Vimeo](https://vimeo.com/) 與 [Youtube](https://www.youtube.com)
-* 每週更新個人與分組的 Github Pages 投影片與網誌
-    </script>
-</section>
-
-
-						
 </section>
 <section>
 <section data-markdown>
     <script type="text/template">
-# 自學 Python3
+#自評
+<hr color="white">
+	
+#分數:65
 
-[Python3 程式範例](https://github.com/mdecourse/2016fallcp/blob/master/python3program.py)
-### 在哪裡執行?
-### 如何執行?
-### 如何寫心得?
-### 如何錄製操作過程?
+<a href="https://cadpb.kmol.info/40523211/doc/trunk/blog/"target="_blank"><br>網誌</a></font>
+
+ <a href="https://cadpb.kmol.info/40523211/wiki?name=40523211"target="_blank"><br>wiki</a></font>
+
+<a href="https://www.youtube.com/watch?v=pYEMJ2qfuR4&feature=youtu.be"target="_blank"><br>心得影片 </a></font>
+
+</p>
     </script>
 </section>
 
-
-						
 <section data-markdown>
     <script type="text/template">
-# 在哪裡執行?
-
-### 單機操作系統中 (近端)
-### 單機連結到遠端主機中 (遠端)
-### 瀏覽器中 (網際端)
+期中2分鐘影片網址
+<hr color="white">	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVeMQwUwujI" frameborder="0" allowfullscreen></iframe>
     </script>
 </section>
 
-
-						
-<section data-markdown>
-    <script type="text/template">
-# Python 解譯器
-
-CPython: https://www.python.org/
-
-(Anaconda: https://www.continuum.io/downloads)
-    
-IronPython (.NET): http://ironpython.net/
-
-Jython (Java): http://www.jython.org/
-
-Pypy (Python): http://pypy.org/
-
-Brython (Javascript): https://www.brython.info/
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# Python 2 或 3?
-
-### 業界大部份仍以 2.7 版為主
-但是, 若沒有特別約束
-### 建議直接學習 Python3
-    </script>
-</section>
-
-
-						
-</section>
-<section>
-<section data-markdown>
-    <script type="text/template">
-# 計算機程式專題
-
-* 如何進行上課分組與排座位?
-* 如何寫一個猜數字遊戲?
-* 如何繪製 2D 靜態圖?
-* 如何製作一個簡單的網際遊戲?
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 課程分組排座位
-
-* 想像一下分組流程
-* 請畫出流程圖
-* 如何進行最好?
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 猜數字遊戲
-
-* 單機執行還是瀏覽器執行?
-* 請畫出流程圖
-* 有沒有參考資料?
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 2D 繪圖
-
-* 單機執行還是瀏覽器執行?
-* 請畫出流程圖
-* 有沒有參考資料?
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 網際遊戲
-
-* 單機執行還是瀏覽器執行?
-* 請畫出流程圖
-* 有沒有參考資料?
-    </script>
-</section>
-
-
-						
-</section>
-<section>
-<section data-markdown>
-    <script type="text/template">
-# Github 倉儲網頁
-
-####建立個人 Github 網頁 (帳號.github.io)
-####建立個人課程作業網頁 (納入投影片與網誌架構)
-####組長建立分組的評量網頁 (納入投影片與網誌架構)
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 學員作業網頁定版
-
-###個人作業網頁內容可以隨時改版
-###分組評量網頁必須在指定時間前定版
-###Github 倉儲 gh-pages分支與子模組應用
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# Github 倉儲拉回請求
-
-####分組倉儲 Collaborators 設定
-####分組倉儲版本 Pull Requests 練習
-####各組員實際操作影片錄製
-####操作影片加字幕以及影片檔相加
-    </script>
-</section>
-
-
-						
-</section>
-<section>
-<section data-markdown>
-    <script type="text/template">
-# Python3 語法
-
-####print()
-####input()
-####變數名稱與關鍵字
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# for 迴圈用法
-
-###Python 程式縮排
-###for i in range(5)：
-###數列與 iterator
-
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 函式用法
-
-####函式定義
-####函式呼叫與傳值
-####函式載入順序
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 數列用法
-
-####數列與索引
-####數列與字串
-####數列排序
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 分組程式內容
-
-####讀取原始資料內容
-####設法分割資料, 納入數列
-####根據設計邏輯進行資料處理
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 遊戲邏輯
-
-####1-100 中隨機取一個數字作為答案
-####設法讓使用者猜這個數字 (接受輸入)
-####使用每猜一次都回答比答案大或小
-####能在一定次數中猜對者獲勝
-####在單機或網際執行程式?
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# Python 網際繪圖
-
-####Brython 簡介
-####Brython 執行設定
-####基本繪圖練習 (五芒星、正齒輪與各國國旗)
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 網際動畫範例
-
-####機構模擬
-####猜顏色遊戲
-####網際對戰遊戲
-    </script>
-</section>
-
-
-						
-</section>
-<section>
-<section data-markdown>
-    <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-    </script>
-</section>
-
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-    </script>
-</section>
-
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-## 使用 iframe 導入影片
-
-### 導入影片 template
-
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </script>
-</section>
-
-
-						
 </section>
 </div>
 
 </div>
 
-<script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"></script>
-<script src="https://cad-lab.github.io/cadlab_data/reveal/js/reveal.js"></script>
+<script src="data/reveal/head.min.js"></script>
+<script src="data/reveal/reveal.js"></script>
 <script>
         // More info https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
@@ -560,13 +459,13 @@ make.start()
 
             // More info https://github.com/hakimel/reveal.js#dependencies
             dependencies: [
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/zoom-js/zoom.js', async: true },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/notes/notes.js', async: true },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/math/math.js', async: true }
+                { src: 'data/reveal/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'data/reveal/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'data/reveal/zoom.js', async: true },
+                { src: 'data/reveal/notes.js', async: true },
+                { src: 'data/reveal/math.js', async: true }
             ]
         });
 </script>

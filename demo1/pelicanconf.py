@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 's40523210'
-SITENAME = '2016Fall CPB 課程網誌 (虎尾科大MDE)'
+AUTHOR = 'KMOL'
+SITENAME = '2017Fall CADP&CP (虎尾科大MDE)'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = 10
 
 # 必須絕對目錄或相對於設定檔案所在目錄
 PLUGIN_PATHS = ['plugin']
-PLUGINS = ['liquid_tags.notebook', 'summary', 'tipue_search', 'sitemap']
+PLUGINS = ['summary', 'tipue_search', 'sitemap']
 
 # for sitemap plugin
 SITEMAP = {
@@ -66,6 +66,7 @@ DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_TAGS_INLINE = True
 TAGS_URL = "tags.html"
 CATEGORIES_URL = "categories.html"
+#MENUITEMS = [('About', 'pages/about/')]
 #SHOW_ARTICLE_AUTHOR = True
 
 #MENUITEMS = [('Home', '/'), ('Archives', '/archives.html'), ('Search', '/search.html')]
